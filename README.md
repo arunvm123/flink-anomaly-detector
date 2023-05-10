@@ -1,6 +1,7 @@
 # Flink-Anomaly-Detector
 
 The Flink application detects anomaly based on the following rule - A user making more than 5 requests in 15 seconds is considered an anomaly.
+Companion repo to https://arunvmathew.medium.com/intro-to-apache-flink-9081d0cc625f
 
 ## Pre-requisites
 
