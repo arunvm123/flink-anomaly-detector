@@ -20,4 +20,8 @@ able to view more information on the Flink UI.
 
 ## Script
 
-TODO
+A script written in Golang has been added to the scripts folder, to simulate the logs the job will be recieving
+and to trigger anomaly detection. The script creates ten users, each user identified by a uuid. It will also log five messages
+per user, except the last two users who will be making twice the requests, which will be our anomaly and the Flink application
+will detect and log these user ids to the output kafka topic.
+Assuming Golang is already setup, the script can be run with ```cd script && go run main.go```.
